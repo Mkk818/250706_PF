@@ -28,7 +28,8 @@ ul {
 
 /* Common */
 .section-title {
-    font-size: 48px;
+    font-family: 'Tangerine', cursive;
+    font-size: 96px;
     font-weight: 400;
     text-align: center;
     margin-bottom: 80px;
@@ -144,7 +145,7 @@ header {
     border-radius: 50%;
     display: flex;
     align-items: center;
-    
+
 }
 
 .profile-img-container img {
@@ -186,7 +187,7 @@ header {
 .works-category h3 {
     font-size: 24px;
     margin-bottom: 30px;
-    text-align: center;
+    text-align: left;
 }
 
 .works-items {
@@ -307,8 +308,8 @@ footer {
 /* Responsive Styles */
 @media (max-width: 768px) {
     .section-title {
-        font-size: 32px;
-        margin-bottom: 40px;
+        font-size: 48px;
+        margin-bottom: 20px;
     }
 
     /* Header */
@@ -336,6 +337,10 @@ footer {
         gap: 20px;
     }
 
+    .sns-links img {
+        height: 20px;
+    }
+
     /* Main Visual */
     #main-visual {
         height: 60vh;
@@ -359,10 +364,11 @@ footer {
         flex-direction: column;
         gap: 40px;
     }
-.profile-img-container {
-    width: 250px;
-    height: 250px;
-}
+
+    .profile-img-container {
+        width: 250px;
+        height: 250px;
+    }
 
     .profile-img-container img {
         width: 250px;
@@ -382,6 +388,12 @@ footer {
     /* Works */
     #works {
         padding: 60px 20px;
+    }
+
+    .works-category h3 {
+        font-size: 18px;
+        margin: 0 0 20px 20px;
+        font-weight: 400;
     }
 
     .works-items {
