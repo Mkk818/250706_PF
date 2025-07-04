@@ -409,6 +409,7 @@ footer {
 
     .contact-form-container {
         padding: 30px;
+        max-width: 240px;
     }
 
     /* Footer */
