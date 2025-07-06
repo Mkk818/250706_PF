@@ -11,6 +11,13 @@
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+<!-- ThanksPage -->
+<script type="text">
+       let submitted = false;
+</script>
+<iframe name="hidden_iframe" id="hidden_iframe" style="display: none"
+    onload="if(submitted){window.location='thanks.html';}">
+</iframe>
 
 <body>
     <header>
@@ -89,9 +96,12 @@
                 <div class="works-category">
                     <h3>LP</h3>
                     <div class="works-items">
-                        <div class="work-item-lp"><img src="images/lp01.png" class="thumbnail" data-image="images/lp01.png" alt="LP 1"></div>
-                        <div class="work-item-lp"><img src="images/lp02.png" class="thumbnail" data-image="images/lp02.png" alt="LP 2"></div>
-                        <div class="work-item-lp"><img src="images/lp03.png" class="thumbnail" data-image="images/lp03.png" alt="LP 3"></div>
+                        <div class="work-item-lp"><img src="images/lp01.png" class="thumbnail"
+                                data-image="images/lp01.png" alt="LP 1"></div>
+                        <div class="work-item-lp"><img src="images/lp02.png" class="thumbnail"
+                                data-image="images/lp02.png" alt="LP 2"></div>
+                        <div class="work-item-lp"><img src="images/lp03.png" class="thumbnail"
+                                data-image="images/lp03.png" alt="LP 3"></div>
                     </div>
                 </div>
             </div>
@@ -100,18 +110,21 @@
         <section id="contact">
             <h2 class="section-title">Contact</h2>
             <div class="contact-form-container">
-                <form action="#">
+                <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSemgJWA6pzCgl1wfxAvKFOMeo2qXTyIEcP3uFNM2shWH_Mt8g/formResponse
+" method="POST" target="hidden_iframe" onsubmit="submitted-true" class="">
                     <div class="form-group">
                         <label for="name">氏名<span>（必須）</span></label>
-                        <input type="text" id="name" placeholder="wentz">
+                        <input type="text" id="name" placeholder="wentz" name="entry.1884985316" required="required">
                     </div>
                     <div class="form-group">
                         <label for="email">メールアドレス<span>（必須）</span></label>
-                        <input type="email" id="email" placeholder="mail@wentz-design.com">
+                        <input type="email" id="email" placeholder="mail@wentz-design.com" name="entry.1906261702"
+                            required="required">
                     </div>
                     <div class="form-group">
-                        <label for="message">お問い合わせ内容</label>
-                        <textarea id="message" placeholder="詳細を記入して下さい。"></textarea>
+                        <label for="message">お問い合わせ内容<span>（必須）</span></label>
+                        <textarea id="message" placeholder="詳細を記入して下さい。" name="entry.1801392233"
+                            required="required"></textarea>
                     </div>
                     <button type="submit" class="submit-btn">送信</button>
                 </form>
