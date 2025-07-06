@@ -11,13 +11,6 @@
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<!-- ThanksPage -->
-<script type="text">
-       let submitted = false;
-</script>
-<iframe name="hidden_iframe" id="hidden_iframe" style="display: none"
-    onload="if(submitted){window.location='thanks.html';}">
-</iframe>
 
 <body>
     <header>
@@ -111,7 +104,7 @@
             <h2 class="section-title">Contact</h2>
             <div class="contact-form-container">
                 <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSemgJWA6pzCgl1wfxAvKFOMeo2qXTyIEcP3uFNM2shWH_Mt8g/formResponse
-" method="POST" target="hidden_iframe" onsubmit="submitted-true" class="">
+" method="POST" target="hidden_iframe" onsubmit="submitted-true">
                     <div class="form-group">
                         <label for="name">氏名<span>（必須）</span></label>
                         <input type="text" id="name" placeholder="wentz" name="entry.1884985316" required="required">
@@ -128,6 +121,12 @@
                     </div>
                     <button type="submit" class="submit-btn">送信</button>
                 </form>
+                <!-- <script type="text/javascript">
+                    var submitted = false;
+                </script>
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display: none"
+                    onload="if(submitted) {window.location='thanks.html';}">
+                </iframe> -->
             </div>
         </section>
     </main>
