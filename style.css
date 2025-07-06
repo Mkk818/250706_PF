@@ -305,7 +305,7 @@ footer {
     letter-spacing: 0.05em;
 }
 
-/* Responsive Styles */
+/* Responsive Styles(index.html) */
 @media (max-width: 768px) {
     .section-title {
         font-size: 48px;
@@ -458,4 +458,25 @@ footer {
     border-radius: 8px;
     font-size: 14px;
     cursor: pointer;
+}
+
+/* ThanksPage */
+.thanks-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #BED5E8;
+    width: 20%;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    margin: 10% auto;
+    gap: 10%;
+    border-radius: 40px;
+}
+
+/* Responsive Styles(thank.html) */
+@media (max-width: 768px) {
+    .thanks-container {
+        width: 300px;
+    }
 }
